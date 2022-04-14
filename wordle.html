@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  
+  <script type="text/javascript" src="words.js"></script>
+
+<head>
+<style>
+
+
+input {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border-color: #ADD8E6;
+  
+}
+#everything{
+  background: #ADD8E6;
+  border-radius: 8px;
+  height: 450px;
+  width: 500px;
+}
+#row{
+  position: relative;
+  left: 10px;
+  padding: 15px;
+  text-align: center;
+}
+#header{
+  border-radius: 4px;
+  background: #1E5162;
+  width: 300px;
+  text-align: center;
+
+}
+h1{
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<div id="header">
+  <h1>Guess the Word</h1>
+</div>
+
+<div id="everything">
+  <div id="row">
+    <input type="text" id="11" onkeyup="move(this, '12')"></input>
+    <input type="text" id="12" onkeyup="move(this, '13')"></input>
+    <input type="text" id="13" onkeyup="move(this, '14')"></input>
+    <input type="text" id="14" onkeyup="move(this, '15')"></input>
+    <input type="text" id="15" onkeyup="moveLast(this, '21')"></input>
+  </div>
+
+  <div id="row">
+    <input type="text" id="21" onkeyup="move(this, '22')"></input>
+    <input type="text" id="22" onkeyup="move(this, '23')"></input>
+    <input type="text" id="23" onkeyup="move(this, '24')"></input>
+    <input type="text" id="24" onkeyup="move(this, '25')"></input>
+    <input type="text" id="25" onkeyup="moveLast(this, '31')"></input>
+  </div>
+
+  <div id="row">
+    <input type="text" id="31" onkeyup="move(this, '32')"></input>
+    <input type="text" id="32" onkeyup="move(this, '33')"></input>
+    <input type="text" id="33" onkeyup="move(this, '34')"></input>
+    <input type="text" id="34" onkeyup="move(this, '35')"></input>
+    <input type="text" id="35" onkeyup="moveLast(this, '41')"></input>
+  </div>
+
+  <div id="row">
+    <input type="text" id="41" onkeyup="move(this, '42')"></input>
+    <input type="text" id="42" onkeyup="move(this, '43')"></input>
+    <input type="text" id="43" onkeyup="move(this, '44')"></input>
+    <input type="text" id="44" onkeyup="move(this, '45')"></input>
+    <input type="text" id="45" onkeyup="moveLast(this, '51')"></input>
+  </div>
+
+  <div id="row">
+    <input type="text" id="51" onkeyup="move(this, '52')"></input>
+    <input type="text" id="52" onkeyup="move(this, '53')"></input>
+    <input type="text" id="53" onkeyup="move(this, '54')"></input>
+    <input type="text" id="54" onkeyup="move(this, '55')"></input>
+    <input type="text" id="55" onkeyup=""></input>
+  </div>
+</div>
+
+<button onclick="getFirst()">enter</button>
+
+</body>
+</html>
+
+
+
